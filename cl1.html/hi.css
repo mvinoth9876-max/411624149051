@@ -7,13 +7,19 @@ body{
     font-style: italic;
 } */
 img{
-    height: 300px;
-    width: 300px;
-    border-radius: 200px;
+    height: 500px;
+    width: 50%;
+     /* border-radius: 200px;/ */
+    }
+@media(max-width : 600px){
+
+    img{
+        height: auto;
+        width: 100%;
+    }
 }
 video{
-    height: 300px;
-    width: 500px;
+   width: 500px;
 }
 ol{
     list-style-type: upper-roman;
@@ -44,6 +50,13 @@ nav{
     display: flex;
     flex-direction: column;
 }
+@media(max-width : 600px){
+    nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+}
 #p1{
     font-style: italic;
     font-size: 20px;
@@ -57,5 +70,11 @@ nav{
 }
 .grid{
     display: grid;
+   
+}
+@media(min-width : 1024px){
+    .grid{
+    display: grid;
     grid-template-columns: 33% 33% 33%;
+}
 }
